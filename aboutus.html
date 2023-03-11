@@ -8,53 +8,102 @@
 </head>
 
 <body>
-
-    <header class="jumbotron " style="background-color:rgb(108, 37, 173); color:aliceblue">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"  style="background-color:rgb(108, 37, 173); color:aliceblue">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron " style="background-color:rgb(158, 116, 199); color:aliceblue">
+        <div class="container">
+            <div class="row-header row">
+                <div class="col-md-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-md-6">
+                   
+                    <img class="img-responsive col-md-3" src="logo.png">
+                
+                    <a class="btn btn-warning col-md-3 mx-auto" href="#my_form">Resevr Table</a>
+                    
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="">
-            <div>
-               <h3>About Us</h3>
-               <hr>
+       <div>
+            <div class="media mb-3">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                        src="img/uthappizza.png" alt="Uthappizza">
+                <div class="media-body">
+                    <h2 class="mt-0">Uthappizza</h2>
+                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                        Italian pizza, topped with Cerignola olives, ripe vine
+                        cherry tomatoes, Vidalia onion, Guntur chillies and
+                        Buffalo Paneer.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="col-md-6">
-            <div>
-                <h2>Our History</h2>
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
-            </div>
-            <div>
-            </div>
-        </div>
-
-
-        <div class="col-md-12">
-            <div>
-                <h2>Corporate Leadership</h2>
-                <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
-                <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
-                <h3>Dhanasekaran Witherspoon <small>Chief Food Officer</small></h3>
-                <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
-                <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
-                <p>Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
-                <h3>Alberto Somayya <small>Executive Chef</small></h3>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
-            </div>
+            
        </div>
-
+       <div class="media mb-5">
+        <h3 class="col-md-2 mr-3">Weakend promotions goes here </h3>
+        <div class="media-body">
+            <h2 class="mt-0">Weakend Grand Buffet <span class="badge badge-danger"> New</span></h2>
+            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                International experience having worked closely with
+                whos-who in the culinary world, he specializes in
+                creating mouthwatering Indo-Italian fusion experiences.
+                </p>
+        </div>
+        <img class="d-flex mr-3 img-thumbnail align-self-right"
+                src="img/buffet.png" alt="Alberto Somayya">
+    </div>
+       <div class="col-8 mb-4 offset-md-2" id="my_form">
+            <div class="card">
+                <div class="card-header bg-warning text-white">
+                    Reserv Table
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">                        
+                        <label for="gust" class="col-12 col-md-2 col-form-label">Number of Gusts</label>
+                        <div class="col-12 col-md-5">
+                            <input type="radio" class="form-group" name="my_radio" value="1"> 1                             
+                            <input type="radio" class="form-group" name="my_radio" value="1"> 2 
+                            <input type="radio" class="form-group" name="my_radio" value="1"> 3
+                            <input type="radio" class="form-group" name="my_radio" value="1"> 4
+                            <input type="radio" class="form-group" name="my_radio" value="1"> 5
+                            <input type="radio" class="form-group" name="my_radio" value="1"> 6
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-label">Data and time</label>
+                        <div class="col-6 col-md-4">
+                            <input type="input" class="form-group" placeholder="Date">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <input type="input" class="form-group" placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Reserv</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dic>
     </div>
 
     <footer class="footer" style="background-color: rgb(208, 186, 229);">
